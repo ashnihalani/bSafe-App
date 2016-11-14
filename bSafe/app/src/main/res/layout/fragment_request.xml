@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <Button
+        android:text="Request"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/Request"
+        android:layout_weight=".34"
+        android:textSize="36sp"
+        android:hapticFeedbackEnabled="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InfoYour">
+
+        <TextView
+            android:text="Your Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/Dest1"
+            android:textSize="24sp"
+            android:hint="Latitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/Dest2"
+            android:textSize="24sp"
+            android:hint="Longitude" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight=".66"
+        android:layout_width="match_parent"
+        android:id="@+id/partnerInfo"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Partner Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PartnerInfo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Name:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PartnerName"
+            android:textSize="24sp"
+            tools:layout_margin="14dp" />
+
+        <TextView
+            android:text="Meeting Place:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PartnerMeet"
+            tools:layout_margin="14dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
